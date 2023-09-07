@@ -1,12 +1,12 @@
 # Select version of g++
 ifneq (, $(shell which g++-9))
-CXX = g++-9 -g $(CS340)
+CXX = g++-9 -gdwarf-4 $(CS340)
 else
 ifneq (, $(shell which g++-11))
-CXX = g++-11 -g $(CS340)
+CXX = g++-11 -gdwarf-4 $(CS340)
 else
 ifneq (, $(shell which g++))
-CXX = g++ -g $(CS340)
+CXX = g++ -gdwrf-4 $(CS340)
 else
 $(error No g++ compiler found.)
 endif
