@@ -14,7 +14,7 @@ jobs:
       id: release-checkout
       uses: actions/checkout@v3
       with:
-        repository: cs340-illinois/sp23_cs340_.release
+        repository: cs340-illinois/fa23_cs340_.release
         ref: mp2
         path: release
     - name: Copy local files from release
@@ -58,7 +58,7 @@ jobs:
       id: release-checkout
       uses: actions/checkout@v3
       with:
-        repository: cs340-illinois/sp23_cs340_.release
+        repository: cs340-illinois/fa23_cs340_.release
         ref: mp2
         path: release
     - name: Copy local files from release
