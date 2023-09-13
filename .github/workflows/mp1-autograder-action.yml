@@ -74,7 +74,7 @@ jobs:
       with:
         reference_files: 'release/mp1/.github/classroom : mp1/.github/classroom, release/mp1/Makefile : mp1/Makefile, release/mp1/tests : mp1/tests'
     - name: Install valgrind
-      run: sudo apt install -y valgrind
+      run: sudo apt update -y && sudo apt install -y valgrind
     - name: Autograding
       id: autograding
       uses: illinois/autograding@v3
