@@ -74,7 +74,7 @@ jobs:
       with:
         reference_files: 'release/mp2-jklmnop/.github/classroom : mp2-jklmnop/.github/classroom, release/mp2-jklmnop/Makefile : mp2-jklmnop/Makefile, release/mp2-jklmnop/tests : mp2-jklmnop/tests'
     - name: Install valgrind
-      run: sudo apt install -y valgrind
+      run: sudo apt update -y && sudo apt install -y valgrind
     - name: Autograding
       id: autograding
       uses: illinois/autograding@v3
