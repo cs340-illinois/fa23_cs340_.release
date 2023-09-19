@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "testers/mp0-gif - illinify gif",
-      "setup": "make test",
+      "setup": "make && make test",
       "run": "./test -w NoTests 'testers/mp0-gif - illinify gif'",
       "comparison": "included",
       "timeout": 0.5,
