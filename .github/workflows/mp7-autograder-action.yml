@@ -4,7 +4,9 @@ name: mp7 autograding
 jobs:
   autograding:
     name: autograding
-    runs-on: ubuntu-latest
+    runs-on:
+    - self-hosted
+    - Linux
     timeout-minutes: 5
     steps:
     - name: Checkout release repository
