@@ -3,7 +3,7 @@
     {
       "name": "test_docker.py - test_docker_all",
       "setup": "",
-      "run": "pytest test_docker.py -k test_docker_all",
+      "run": "pytest test_docker.py -k test_docker",
       "comparison": "included",
       "timeout": 4,
       "points": 1
